@@ -225,7 +225,7 @@ while($download_row = mysqli_fetch_assoc($download_data)) {
 
                                             <div class="form-group">
 
-                                                <input id="name" name="name" type="text" placeholder="Plugin Name" value="" class="form-control" required="">
+                                                <input id="name" name="name" type="text" placeholder="Plugin Name" value="" class="form-control" maxlength="50" required="">
 
                                             </div>
 
@@ -235,7 +235,7 @@ while($download_row = mysqli_fetch_assoc($download_data)) {
 
                                             <div class="form-group">
 
-                                                <input id="versions" type="text" placeholder="Plugin Versions" name="versions" value="" class="form-control" required="">
+                                                <input id="versions" type="text" placeholder="Plugin Versions" name="versions" value="" class="form-control" maxlength="14" required="">
 
                                             </div>
 
@@ -245,7 +245,7 @@ while($download_row = mysqli_fetch_assoc($download_data)) {
 
                                             <div class="form-group">
 
-                                                <textarea id="message" placeholder="Plugin Description" name="message" class="form-control" required=""></textarea>
+                                                <textarea id="message" placeholder="Plugin Description" name="message" class="form-control" maxlength="255" required=""></textarea>
 
                                             </div>
 
