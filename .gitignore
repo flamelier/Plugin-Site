@@ -1,0 +1,6 @@
+# Custom gitignore for Plugin Site project.
+# Copyright (C) 2022 Computer Wolf LLC.
+#
+database.sql
+
+config.php
