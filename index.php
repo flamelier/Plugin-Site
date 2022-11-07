@@ -179,9 +179,26 @@ while($download_row = mysqli_fetch_assoc($download_data)) {
 
         <main>
 
+        <section id="home" class="home-banner-01 bg-cover bg-center bg-no-repeat" style="background-image: url(static/img/2.jpg);">
+                <div class="container">
+                    <div class="row full-screen align-items-center justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="ht-box text-center">
+                                <h3 class="white-color">Hello There!</h3>
+                                <!-- <h2 class="white-color">Computer Wolf</h2> -->
+                                <p class="white-color">Try out all my free plugins below!</p>
+                                <div class="p-30px-t go-to">
+                                    <!-- <a class="m-btn m-btn-lg m-btn-radius m-btn-theme" href="#contactus">Let's talk New</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Discord Add Testiminail -->
 <?php if ( isset($_SESSION['uid']) ) :?>
-            <section id="addPlugin" class="section gray-bg" style="background-image: url(static/img/171177.jpg);">
+            <section id="addPlugin" class="section gray-bg" style="background-image: url(static/img/u7KlCCw.jpg);">
 
                 <div class="container">
 
