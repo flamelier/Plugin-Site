@@ -53,7 +53,7 @@ if (!empty($pluginName) && !empty($pluginVersion) && !empty($pluginDescription) 
             
     
             // INSERT variable that has the user table and the collumns with the variables for those collumns filled out.
-            $INSERT = "INSERT INTO pluginsTable (pluginUploadDate, pluginName, pluginDescription, pluginVersions, pluginLink, pluginEnabled) VALUES (CURRENT_DATE(), '$pluginName', '$pluginDescription', '$pluginVersion', 'https://computerwolf.com/webprojects/MC-Setups/dl/$file_name', '$pluginEnabled')";
+            $INSERT = "INSERT INTO pluginsTable (pluginUploadDate, pluginName, pluginDescription, pluginVersions, pluginLink, pluginEnabled) VALUES (CURRENT_DATE(), '$pluginName', '$pluginDescription', '$pluginVersion', 'https://computerwolf.com/webprojects/Plugin-Site/dl/$file_name', '$pluginEnabled')";
             // Try to insert the new user, it will say new user created successfully and redirect back to index page for them to login, it does this automatically.
             if (mysqli_query($con, $INSERT)) {
                 echo "<h1><center>Hello, <b>".$_SESSION['uid']."</b>, please wait for redirect or click <a href=\"index.php\">here</a>.</center></h1>";

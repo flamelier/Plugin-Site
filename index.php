@@ -23,7 +23,7 @@ $download_data = mysqli_query($con, $download_query);
 while($download_row = mysqli_fetch_assoc($download_data)) {
     $pluginID = $download_row['pluginID'];
     $pluginLink = $download_row['pluginLink'];
-    if(isset($_POST[''.$download_row['pluginID'].''])) {
+    if(isset($_POST[''.$pluginID.''])) {
         // echo "<a href=\"".$pluginLink."\">This is ".$pluginID." that is selected</a>"; // Debug
 
         $update_download_query = "UPDATE pluginsTable SET pluginDownloads = pluginDownloads + 1 WHERE pluginID = $pluginID";
@@ -205,7 +205,7 @@ while($download_row = mysqli_fetch_assoc($download_data)) {
 
                             <!-- form -->
 
-                            <div class="contact-form box-shadow-lg darkgray-bg">
+                            <div class="contact-form box-shadow-lg dark-bg">
                             
                                 <div class="sm-title p-25px-b">
 
@@ -374,7 +374,7 @@ while($download_row = mysqli_fetch_assoc($download_data)) {
 
                                         echo "<p class=\"m-0px white-color-light\">".$pluginDescription."</p>";
 
-                                        echo "<form method=\"POST\" action=\"\"><button class=\"m-btn m-btn-t-theme\" type=\"submit\" name=\"$pluginID\">Download</button></from>";
+                                        echo "<form method=\"POST\" action=\"\"><button class=\"m-btn m-btn-t-theme\" type=\"submit\" name=\"$pluginID\">Download</button></form>";
                                         
                                         // echo "<a class=\"m-100px-l m-btn m-btn-t-theme\" href=\"".$pluginLink."\">Download</a>";
                                         
