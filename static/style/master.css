@@ -5417,6 +5417,19 @@ h6 {
   .feature-box-4:hover {
     border-color: #309eff; }
 
+.feature-box-5 {
+  background: #444444;
+  border-radius: 5px;
+  border-bottom: 5px solid transparent; }
+  .feature-box-5 .f-icon {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    font-size: 54px; }
+  .feature-box-5:hover {
+    border-color: #309eff; }
+
 /* Testimonials
 --------------------------------*/
 .testimonial-col-01 {
