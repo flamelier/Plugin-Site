@@ -35,6 +35,13 @@ if (!empty($_SESSION["uid"]) || !empty($_SESSION['password'])) {
     
     }
     else {
+        if ( isset($_SESSION['uid']) ) {
+            // remove all session variables
+             session_unset();
+         
+             // destroy the session
+             session_destroy(); 
+         }
         echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">
         <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=windows-1252\">
         <title>Help Desk &nbsp;-&nbsp; Logon</title>
@@ -50,6 +57,13 @@ if (!empty($_SESSION["uid"]) || !empty($_SESSION['password'])) {
 }
 // If the information isnt filled out completely then it will tell them and allow them to try again.
 else {
+    if ( isset($_SESSION['uid']) ) {
+        // remove all session variables
+         session_unset();
+     
+         // destroy the session
+         session_destroy(); 
+     }
     echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">";
     echo "<html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=windows-1252\">";
     echo "<title>Help Desk &nbsp;-&nbsp; Logon</title>";
