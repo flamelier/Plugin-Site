@@ -197,7 +197,7 @@ while($download_row = mysqli_fetch_assoc($download_data)) {
             </section>
 
             <!-- Discord Add Testiminail -->
-<?php if ( isset($_SESSION['uid']) ) :?>
+<?php if ( $_SESSION['uid'] == $loginUsername && $_SESSION['password'] == $loginPassword ) :?>
             <section id="addPlugin" class="section gray-bg" style="background-image: url(static/img/u7KlCCw.jpg);">
 
                 <div class="container">
@@ -320,7 +320,68 @@ while($download_row = mysqli_fetch_assoc($download_data)) {
 
             </section>
 <?php else:?>
+    <section id="addPlugin" class="section gray-bg" style="background-image: url(static/img/u7KlCCw.jpg);">
 
+<div class="container">
+
+    <div class="row justify-content-center sm-m-25px-b m-45px-b">
+
+        <div class="col-md-12 col-lg-8">
+
+            <div class="section-title text-center">
+
+                <h2 class="white-color">ADD <span class="theme-color">NEW </span> PLUGINS</h2>
+
+            </div>        
+
+        </div>
+
+    </div>
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-7 m-15px-tb">
+
+            <!-- form -->
+
+            <div class="contact-form box-shadow-lg dark-bg">
+            
+                <div class="sm-title p-25px-b">
+
+                    <h5 class="white-color">Incorrect username or password.</h5>
+
+                    <p class="m-0px">Copyright (C) 2022 Computer Wolf LLC</p>
+
+                    <!-- <i class="fa fa-quote-left fa-3x fa-pull-left"></i> -->
+
+                </div>
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="send">
+
+                                <button class="m-btn m-btn-t-theme" type="submit" name="send">Submit</button>
+
+                                <a class="m-100px-l m-btn m-btn-t-theme" href="logoff.php">Logout</a>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+</section>
 <?php endif;?>
             <!-- End Discord Add Testiminail -->
 

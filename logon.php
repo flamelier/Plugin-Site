@@ -11,15 +11,16 @@ session_start();
 
 //Assigned inputted data from index.php form to variables
 $_SESSION['uid'] = $_POST['uid'];
+$_SESSION['password'] = $_POST['password'];
 
 // echo $_POST['uid']; // Debug
 // echo $_SESSION['uid']; // Debug
 // echo $_POST['password']; // Debug
 
 // Makes sure none of the variables gotten from Logon.php form is empty
-if (!empty($_SESSION["uid"]) || !empty($_POST['password'])) {
+if (!empty($_SESSION["uid"]) || !empty($_SESSION['password'])) {
 
-    if ($_SESSION['uid'] == $loginUsername && $_POST['password'] == $loginPassword) {
+    if ($_SESSION['uid'] == $loginUsername && $_SESSION['password'] == $loginPassword) {
 
         // echo $_POST['uid']; // Debug
         // echo $_SESSION['uid']; // Debug
