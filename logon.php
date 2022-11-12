@@ -18,7 +18,7 @@ $_SESSION['password'] = $_POST['password'];
 // echo $_POST['password']; // Debug
 
 // Makes sure none of the variables gotten from Logon.php form is empty
-if (!empty($_SESSION["uid"]) || !empty($_SESSION['password'])) {
+if (!empty($_SESSION["uid"]) && !empty($_SESSION['password'])) {
 
     if ($_SESSION['uid'] == $loginUsername && $_SESSION['password'] == $loginPassword) {
 
